@@ -1,7 +1,8 @@
     $(document).ready( //selecting document object 
         // saveBtn with on click function
         $('.saveBtn').on('click',
-          function() {
+          function(event) {
+            event.preventDefault(); //stop form from refreshing NOT WORKING
             let value = $(this).siblings('.description').val()
             let time = $(this).siblings('.hour').text()
             localStorage.setItem(time, value)
@@ -29,4 +30,7 @@
 
 
     //need to have timeblocks change colors 
-    //access current day with moment.js look at header 
+
+    //dislay current date at the top of the calendar 
+    $("#currentDay").text(moment().format("MMM Do YY")); 
+    console.log(moment().format("MMM Do YY"));
