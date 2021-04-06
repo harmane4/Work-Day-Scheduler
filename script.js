@@ -15,13 +15,57 @@ $(document).ready(function () {
   function retrieveSchedule() {
     var currentTime = moment().format("h");
     console.log(moment().format("h"));
+    
     var firstTime = localStorage.getItem("9AM");
-    console.log(currentTime);
+    console.log(firstTime)
     $("#firstTimeBlock").val(firstTime);
     if (currentTime > 9) {
         $('#firstTimeBlock').css({'background-color': '#ccccc7'});
-    }  
-    }
+    } 
+    
+    var secondTime = localStorage.getItem("10AM");
+    console.log(secondTime);
+    $("#secondTimeBlock").val(secondTime);
+    if (currentTime > 10) {
+        $('#secondTimeBlock').css({'background-color': '#ccccc7'});
+    } 
+
+    var thirdTime = localStorage.getItem("11AM");
+    console.log(thirdTime);
+    $("#thirdTimeBlock").val(thirdTime);
+    if (currentTime > 10) {
+        console.log(currentTime)
+        $('#thirdTimeBlock').css({'background-color': '#ccccc7'});
+    } 
+
+    var fourthTime = localStorage.getItem("12PM");
+    console.log(fourthTime);
+    $("#fourthTimeBlock").val(fourthTime);
+    if (currentTime > 10) {
+        $('#fourthTimeBlock').css({'background-color': '#e9300'});
+    } 
+
+    var fifthTime = localStorage.getItem("1PM");
+    console.log(fifthTime);
+    $("#fifthTimeBlock").val(fifthTime);
+
+    var sixthTime = localStorage.getItem("2PM");
+    console.log(sixthTime);
+    $("#sixthTimeBlock").val(sixthTime);
+
+    var seventhTime = localStorage.getItem("3PM");
+    console.log(seventhTime);
+    $("#seventhTimeBlock").val(seventhTime);
+
+    var eighthTime = localStorage.getItem("4PM");
+    console.log(eighthTime);
+    $("#eighthTimeBlock").val(eighthTime);
+   
+    var ninthTime = localStorage.getItem("5PM");
+    console.log(ninthTime);
+    $("#ninthTimeBlock").val(ninthTime);
+
+}
 
   //dislay current date at the top of the calendar
   $("#currentDay").text(moment().format("dddd, MMM Do YYYY"));
