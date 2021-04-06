@@ -21,13 +21,13 @@ $(document).ready(function () {
     var currentTime = moment().format("h");
     console.log(currentTime);
 
-    var firstTime = localStorage.getItem("9");
+    var firstTime = localStorage.getItem("9:00");
     $("#firstTimeBlock").val(firstTime);
     if (currentTime > 9) {
       $("#firstTimeBlock").css({ "background-color": "#ccccc7" });
     }
 
-    var secondTime = localStorage.getItem("10");
+    var secondTime = localStorage.getItem("10:00");
     $("#secondTimeBlock").val(secondTime);
     if (currentTime > 10) {
       $("#secondTimeBlock").css({ "background-color": "#ccccc7" });
@@ -37,7 +37,7 @@ $(document).ready(function () {
         $("#secondTimeBlock").css({ "background-color": "#006400" });
       }
 
-    var thirdTime = localStorage.getItem("11");
+    var thirdTime = localStorage.getItem("11:00");
     $("#thirdTimeBlock").val(thirdTime);
       if (currentTime > 11) {
         $("#thirdTimeBlock").css({ "background-color": "#ccccc7" });
@@ -47,7 +47,7 @@ $(document).ready(function () {
           $("#thirdTimeBlock").css({ "background-color": "#006400" });
         }
 
-    var fourthTime = localStorage.getItem("12");
+    var fourthTime = localStorage.getItem("12:00");
     $("#fourthTimeBlock").val(fourthTime);
   if (currentTime > 12) {
         $("#fourthTimeBlock").css({ "background-color": "#ccccc7" });
@@ -57,7 +57,7 @@ $(document).ready(function () {
           $("#fourthTimeBlock").css({ "background-color": "#006400" });
         }
 
-    var fifthTime = localStorage.getItem("13");
+    var fifthTime = localStorage.getItem("13:00");
     $("#fifthTimeBlock").val(fifthTime);
     if (currentTime > 13) {
         $("#fifthTimeBlock").css({ "background-color": "#ccccc7" });
@@ -67,7 +67,7 @@ $(document).ready(function () {
           $("#fifthTimeBlock").css({ "background-color": "#006400" });
         }
 
-    var sixthTime = localStorage.getItem("14");
+    var sixthTime = localStorage.getItem("14:00");
     $("#sixthTimeBlock").val(sixthTime);
     if (currentTime > 14) {
         $("#sixthTimeBlock").css({ "background-color": "#ccccc7" });
@@ -77,7 +77,7 @@ $(document).ready(function () {
           $("#sixthTimeBlock").css({ "background-color": "#006400" });
         }
 
-    var seventhTime = localStorage.getItem("15");
+    var seventhTime = localStorage.getItem("15:00");
     $("#seventhTimeBlock").val(seventhTime);
     if (currentTime > 15) {
         $("#seventhTimeBlock").css({ "background-color": "#ccccc7" });
@@ -87,7 +87,7 @@ $(document).ready(function () {
           $("#seventhTimeBlock").css({ "background-color": "#006400" });
         }
 
-    var eighthTime = localStorage.getItem("16");
+    var eighthTime = localStorage.getItem("16:00");
     $("#eighthTimeBlock").val(eighthTime);
     if (currentTime > 16) {
         $("#eighthTimeBlock").css({ "background-color": "#ccccc7" });
@@ -97,7 +97,7 @@ $(document).ready(function () {
           $("#eighthTimeBlock").css({ "background-color": "#006400" });
         }
 
-    var ninthTime = localStorage.getItem("17");
+    var ninthTime = localStorage.getItem("17:00");
     $("#ninthTimeBlock").val(ninthTime);
     if (currentTime > 17) {
         $("#ninthTimeBlock").css({ "background-color": "#ccccc7" });
