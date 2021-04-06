@@ -1,36 +1,51 @@
-    $(document).ready( //selecting document object 
-        // saveBtn with on click function
-        $('.saveBtn').on('click',
-          function(event) {
-            event.preventDefault(); //stop form from refreshing NOT WORKING
-            let value = $(this).siblings('.description').val()
-            let time = $(this).siblings('.hour').text()
-            localStorage.setItem(time, value)
-          }
-        ),
-        // select id hour-9 class description and set val to LS key 9AM
-        $("#hour-9 .description").val(localStorage.getItem("9AM")),
-        // select id hour-10 class description and set val to LS key 10AM
-        $("#hour-10 .description").val(localStorage.getItem("10AM")),
-        // select id hour-11 class description and set val to LS key 11AM
-        $("#hour-11 .description").val(localStorage.getItem("11AM")),
-        // select id hour-12 class description and set val to LS key 12PM
-        $("#hour-12 .description").val(localStorage.getItem("12PM")),
-        // select id hour-13 class description and set val to LS key 1PM
-        $("#hour-13 .description").val(localStorage.getItem("1PM")),
-        // select id hour-14 class description and set val to LS key 2PM
-        $("#hour-14 .description").val(localStorage.getItem("2PM")),
-        // select id hour-15 class description and set val to LS key 3PM
-        $("#hour-15 .description").val(localStorage.getItem("3PM")),
-        // select id hour-16 class description and set val to LS key 4PM
-        $("#hour-16 .description").val(localStorage.getItem("4PM")),
-        // select id hour-17 class description and set val to LS key 5PM
-        $("#hour-17 .description").val(localStorage.getItem("5PM")),
-      )
+$(document).ready(function () {
+  //selecting document object
 
+  // saveBtn with on click function
+  $(".saveBtn").on("click", function (event) {
+    event.preventDefault(); //stop form from refreshing NOT WORKING
+    let value = $(this).siblings(".description").val();
+    let time = $(this).siblings(".hour").text().trim();
+    localStorage.setItem(time, value);
+    console.log(time);
+  });
 
-    //need to have timeblocks change colors 
+  retrieveSchedule();
 
-    //dislay current date at the top of the calendar 
-    $("#currentDay").text(moment().format("MMM Do YY")); 
-    console.log(moment().format("MMM Do YY"));
+  function retrieveSchedule() {
+    var currentTime = moment().format("h");
+    console.log(moment().format("h"));
+    var firstTime = localStorage.getItem("9AM");
+    console.log(currentTime);
+    $("#firstTimeBlock").val(firstTime);
+    if (currentTime > 9) {
+        $('#firstTimeBlock').css({'background-color': '#ccccc7'});
+    }  
+    }
+
+  //dislay current date at the top of the calendar
+  $("#currentDay").text(moment().format("dddd, MMM Do YYYY"));
+  console.log(moment().format("dddd, MMM Do YYYY"));
+
+  //Variable with current time
+ 
+
+  /*
+        function timeBlockColors() {
+        //If the time is less than the current time (ie. in the past)  all elements with the class 'description' will have their background colour changed to grey
+        if (currentTime < time) {
+            $('.description').css({'background-color': '#ccccc7'});
+            //If the time is the current hour then the color is red 
+        } if (currentTime === time) {
+            $('.description').css({'background-color': '#e9300' });
+            //Else If the time is in the future and more than the current time then the color is green
+        } else (currentTime > time) {
+            $('.description').css({'background-color': '#e93001'});
+        }
+        }
+        
+
+        timeBlockColors()
+       
+        */
+});
