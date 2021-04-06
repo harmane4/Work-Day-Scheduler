@@ -18,7 +18,7 @@ $(document).ready(function () {
   retrieveSchedule();
 
   function retrieveSchedule() {
-    var currentTime = moment().format("h");
+    var currentTime = moment().format("H");
     console.log(currentTime);
 
     var firstTime = localStorage.getItem("9:00");
