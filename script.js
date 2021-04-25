@@ -9,7 +9,6 @@ $(document).ready(function () {
     let value = $(this).siblings(".description").val();
     let time = $(this).siblings(".hour").text().trim();
     localStorage.setItem(time, value);
-    console.log(time);
   });
 
   //Retrieves schedule items from local storage
@@ -17,7 +16,6 @@ $(document).ready(function () {
 
   function retrieveSchedule() {
     var currentTime = moment().format("H");
-    console.log(currentTime);
 
     //Rewrite the for loop
     // for (let index = 9; index < 17; index++) {
@@ -38,109 +36,82 @@ $(document).ready(function () {
 
     var firstTime = localStorage.getItem("9:00");
     $("#firstTimeBlock").val(firstTime);
-    if (currentTime > 9) {
-      $("#firstTimeBlock").css({ "background-color": "#ccccc7" });
-    }
-    if (currentTime == 9) {
+      if (currentTime == 9) {
       $("#firstTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 9) {
+      else if (currentTime < 9) {
       $("#firstTimeBlock").css({ "background-color": "#006400" });
     }
 
     var secondTime = localStorage.getItem("10:00");
     $("#secondTimeBlock").val(secondTime);
-    if (currentTime > 10) {
-      $("#secondTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 10) {
       $("#secondTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 10) {
+    else if (currentTime < 10) {
       $("#secondTimeBlock").css({ "background-color": "#006400" });
     }
 
     var thirdTime = localStorage.getItem("11:00");
     $("#thirdTimeBlock").val(thirdTime);
-    if (currentTime > 11) {
-      $("#thirdTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 11) {
       $("#thirdTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 11) {
+    else if (currentTime < 11) {
       $("#thirdTimeBlock").css({ "background-color": "#006400" });
     }
 
     var fourthTime = localStorage.getItem("12:00");
     $("#fourthTimeBlock").val(fourthTime);
-    if (currentTime > 12) {
-      $("#fourthTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 12) {
       $("#fourthTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 12) {
+    else if (currentTime < 12) {
       $("#fourthTimeBlock").css({ "background-color": "#006400" });
     }
 
     var fifthTime = localStorage.getItem("13:00");
     $("#fifthTimeBlock").val(fifthTime);
-    if (currentTime > 13) {
-      $("#fifthTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 13) {
       $("#fifthTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 13) {
+    else if (currentTime < 13) {
       $("#fifthTimeBlock").css({ "background-color": "#006400" });
     }
 
     var sixthTime = localStorage.getItem("14:00");
     $("#sixthTimeBlock").val(sixthTime);
-    if (currentTime > 14) {
-      $("#sixthTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 14) {
       $("#sixthTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 14) {
+    else if (currentTime < 14) {
       $("#sixthTimeBlock").css({ "background-color": "#006400" });
     }
 
     var seventhTime = localStorage.getItem("15:00");
     $("#seventhTimeBlock").val(seventhTime);
-    if (currentTime > 15) {
-      $("#seventhTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 15) {
       $("#seventhTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 15) {
+    else if (currentTime < 15) {
       $("#seventhTimeBlock").css({ "background-color": "#006400" });
     }
 
     var eighthTime = localStorage.getItem("16:00");
     $("#eighthTimeBlock").val(eighthTime);
-    if (currentTime > 16) {
-      $("#eighthTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 16) {
       $("#eighthTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 16) {
+    else if (currentTime < 16) {
       $("#eighthTimeBlock").css({ "background-color": "#006400" });
     }
 
     var ninthTime = localStorage.getItem("17:00");
     $("#ninthTimeBlock").val(ninthTime);
-    if (currentTime > 17) {
-      $("#ninthTimeBlock").css({ "background-color": "#ccccc7" });
-    }
     if (currentTime == 17) {
       $("#ninthTimeBlock").css({ "background-color": "#DC143C" });
     }
-    if (currentTime < 17) {
+    else if (currentTime < 17) {
       $("#ninthTimeBlock").css({ "background-color": "#006400" });
     }
   }
