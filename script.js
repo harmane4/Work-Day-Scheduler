@@ -19,6 +19,23 @@ $(document).ready(function () {
     var currentTime = moment().format("H");
     console.log(currentTime);
 
+    //Rewrite the for loop
+    // for (let index = 9; index < 17; index++) {
+    //   var time = localStorage.getItem(index + ":00"); // declaring a variable time and assigning it the value of local storage + 00
+    //   $("#timeBlock" + index).val(time); //assigning the value of time to the first time block 
+    //   if (currentTime > time) { //if current time is greater than what is in local storage change background colour
+    //     $("#timeBlock" + index).css({ "background-color": "#ccccc7" });
+    //   }
+    //  else if (currentTime == time) {
+    //     $("#timeBlock" + index).css({ "background-color": "#DC143C" });
+    //   }
+    //   else {
+    //     $("#timeBlock" + index).css({ "background-color": "#006400" });
+    //   }
+      
+    // }
+
+
     var firstTime = localStorage.getItem("9:00");
     $("#firstTimeBlock").val(firstTime);
     if (currentTime > 9) {
