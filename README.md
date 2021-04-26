@@ -18,13 +18,12 @@ When the timeblocks are clicked into, the user can enter an event/text. Once the
 
 [Link to deployed application](https://harmane4.github.io/Work-Day-Scheduler/)
 
-## Credits
+## Technologies Used 
 
-Websites used to create application: 
-
-[jQuery text() method](https://www.w3schools.com/jquery/html_text.asp)
-
-[jQuery API Documentation](https://api.jquery.com/)
+HTML 
+CSS 
+JQuery 
+Local Storage 
 
 ## License 
 [MIT](https://choosealicense.com/licenses/mit/)
