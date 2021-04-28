@@ -37,82 +37,82 @@ $(document).ready(function () {
     var firstTime = localStorage.getItem("9:00");
     $("#firstTimeBlock").val(firstTime);
       if (currentTime == 9) {
-      $("#firstTimeBlock").css({ "background-color": "#DC143C" });
+      $("#firstTimeBlock").css({ "background-color": "#EE6055" });
     }
       else if (currentTime < 9) {
-      $("#firstTimeBlock").css({ "background-color": "#006400" });
+      $("#firstTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var secondTime = localStorage.getItem("10:00");
     $("#secondTimeBlock").val(secondTime);
     if (currentTime == 10) {
-      $("#secondTimeBlock").css({ "background-color": "#DC143C" });
+      $("#secondTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 10) {
-      $("#secondTimeBlock").css({ "background-color": "#006400" });
+      $("#secondTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var thirdTime = localStorage.getItem("11:00");
     $("#thirdTimeBlock").val(thirdTime);
     if (currentTime == 11) {
-      $("#thirdTimeBlock").css({ "background-color": "#DC143C" });
+      $("#thirdTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 11) {
-      $("#thirdTimeBlock").css({ "background-color": "#006400" });
+      $("#thirdTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var fourthTime = localStorage.getItem("12:00");
     $("#fourthTimeBlock").val(fourthTime);
     if (currentTime == 12) {
-      $("#fourthTimeBlock").css({ "background-color": "#DC143C" });
+      $("#fourthTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 12) {
-      $("#fourthTimeBlock").css({ "background-color": "#006400" });
+      $("#fourthTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var fifthTime = localStorage.getItem("13:00");
     $("#fifthTimeBlock").val(fifthTime);
     if (currentTime == 13) {
-      $("#fifthTimeBlock").css({ "background-color": "#DC143C" });
+      $("#fifthTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 13) {
-      $("#fifthTimeBlock").css({ "background-color": "#006400" });
+      $("#fifthTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var sixthTime = localStorage.getItem("14:00");
     $("#sixthTimeBlock").val(sixthTime);
     if (currentTime == 14) {
-      $("#sixthTimeBlock").css({ "background-color": "#DC143C" });
+      $("#sixthTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 14) {
-      $("#sixthTimeBlock").css({ "background-color": "#006400" });
+      $("#sixthTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var seventhTime = localStorage.getItem("15:00");
     $("#seventhTimeBlock").val(seventhTime);
     if (currentTime == 15) {
-      $("#seventhTimeBlock").css({ "background-color": "#DC143C" });
+      $("#seventhTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 15) {
-      $("#seventhTimeBlock").css({ "background-color": "#006400" });
+      $("#seventhTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var eighthTime = localStorage.getItem("16:00");
     $("#eighthTimeBlock").val(eighthTime);
     if (currentTime == 16) {
-      $("#eighthTimeBlock").css({ "background-color": "#DC143C" });
+      $("#eighthTimeBlock").css({ "background-color": "#EE6055" });
     }
     else if (currentTime < 16) {
-      $("#eighthTimeBlock").css({ "background-color": "#006400" });
+      $("#eighthTimeBlock").css({ "background-color": "#60d394" });
     }
 
     var ninthTime = localStorage.getItem("17:00");
     $("#ninthTimeBlock").val(ninthTime);
     if (currentTime == 17) {
-      $("#ninthTimeBlock").css({ "background-color": "#DC143C" });
+      $("#ninthTimeBlock").css({ "background-color": "##EE6055" });
     }
     else if (currentTime < 17) {
-      $("#ninthTimeBlock").css({ "background-color": "#006400" });
+      $("#ninthTimeBlock").css({ "background-color": "#60d394" });
     }
   }
 });
